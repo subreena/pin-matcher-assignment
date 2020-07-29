@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-6" id="pinGeneratorSection">
+            <div class="col-md-6">
                 <div class="pin-generator half-width">
                     <input class="form-control" id="pinnumberGenerate" type="text" placeholder="0" readonly>
                     <button class="generate-btn" onclick="pinGenerator()">Generate Pin</button>
@@ -39,7 +39,7 @@
                             <div class="calc-button-row">
                                 <div class="button" onclick="backspaceNumber()"><</div>
                                 <div class="button" onclick="inputNumber(0)">0</div>
-                                <div class="button" onclick="clearNumbers()">C</div>
+                                <div class="button" onclick="clearAllNumber()">C</div>
                             </div>
                             <div>
                                 <button type="submit" id="submitBtn" class="submit-btn" onclick="matchOrNot()" >Submit</button>
