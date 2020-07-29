@@ -72,7 +72,6 @@ function actionCountdown() {
 function returnToTry() {
     actionCountdown();
     document.getElementById("notifyUnmatch").style.display = "none";
-    // document.getElementById("pinnumberGenerate").value = "";
     document.getElementById("pinNumberInput").value = "";
 
 }
