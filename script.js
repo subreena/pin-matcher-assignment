@@ -59,19 +59,19 @@ function matchOrNot() {
 function actionCountdown() {
     const actionCount = parseInt(document.getElementById("actionCount").innerText);
     const actionLeft = document.getElementById("actionCount").innerText = actionCount - 1;
-    if (actionLeft < 1) {
+    if (actionLeft < 0) {
         document.getElementById("actionCount").innerText = 0;
         document.getElementById("submitBtn").style.display = "none";
-        
+
     }
     }
 
 
 
 //Try Again-- returnToTry function
-function returnToTry() {
+function tryAgain() {
     actionCountdown();
     document.getElementById("notifyUnmatch").style.display = "none";
     document.getElementById("pinNumberInput").value = "";
-
+  
 }
